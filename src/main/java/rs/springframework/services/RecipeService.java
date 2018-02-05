@@ -7,9 +7,6 @@ import rs.springframework.domain.Recipe;
 
 import java.util.Set;
 
-/**
- * Created by rs
- */
 public interface RecipeService {
 
     Flux<Recipe> getRecipes();
