@@ -1,6 +1,8 @@
 package rs.springframework.controllers;
 
-import org.springframework.http.MediaType;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
@@ -10,9 +12,6 @@ import rs.springframework.commands.UnitOfMeasureCommand;
 import rs.springframework.services.IngredientService;
 import rs.springframework.services.RecipeService;
 import rs.springframework.services.UnitOfMeasureService;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 
 
 @Slf4j

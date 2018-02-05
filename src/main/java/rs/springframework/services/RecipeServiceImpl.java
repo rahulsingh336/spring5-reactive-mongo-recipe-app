@@ -1,25 +1,16 @@
 package rs.springframework.services;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import rs.springframework.commands.RecipeCommand;
 import rs.springframework.converters.RecipeCommandToRecipe;
 import rs.springframework.converters.RecipeToRecipeCommand;
 import rs.springframework.domain.Recipe;
-import rs.springframework.exceptions.NotFoundException;
-import rs.springframework.repositories.RecipeRepository;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import rs.springframework.repositories.reactive.RecipeReactiveRepository;
 
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
 
-/**
- * Created by rs
- */
 @Slf4j
 @Service
 public class RecipeServiceImpl implements RecipeService {
